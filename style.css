@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --base-white: #FFF;
+    --gray-900: #101828;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* container de navegação */
+
+nav #container {
+    max-width: 1280px;
+    height: 80px;
+    background: var(--base-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 16px;
+    padding: 0 32px;
+}
+
+/* Ícone do Index (Página inicial) */
+
+a {
+    text-decoration: none;
+    color: #3A404E;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+a img {
+    width: 27px;
+}
+
+a p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* Opções de navegação */
+
+ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+    line-height: 24px;
+}
+
+li .navigation {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Acesso à plataforma / Login */
+
+#buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#acesso, #cadastro {
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#buttons #acesso {
+    border: none;
+    color: var(--text-color);
+    border-radius: 8px;
+    background: none;
+
+    transition: background 0.3s;
+}
+
+#buttons #acesso:hover {
+    background: #F0F0F0;
+}
+
+#buttons #cadastro {
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #FFF;
+}
+
+/* Seção sobre nós */
+
+header {
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 24px;
+    align-self: stretch;
+
+    >span {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--main-color );
+        line-height: 24px;
+    }
+
+    >h1 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: -0.96px;
+        color: var(--gray-900);
+    }
+
+    >p {
+        width: 791px;
+        height: 60px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: var(--text-color);
+    }
+}
